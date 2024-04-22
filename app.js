@@ -73,8 +73,7 @@ function takeCommand(message) {
         const finalText = "Today's date is " + date;
         speak(finalText);
     } else if (message.includes('calculator')) {
-        device.shell('calculator')
-        
+        window.location.href = "calculator.html";
         const finalText = "Opening Calculator";
         speak(finalText);
     } else {
